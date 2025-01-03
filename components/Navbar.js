@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react';
+import Link from 'next/link'
+
 
 
 const Navbar = () => {
@@ -41,30 +43,30 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             } lg:flex flex-col lg:flex-row lg:space-x-6 flex items-center text-lg`}
           >
-            <a
+            <Link
               href="/"
               className="text-white px-4 py-2 hover:text-yellow-400 transition-all duration-300"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="#Projects"
               className="text-white px-4 py-2 hover:text-yellow-400 transition-all duration-300"
             >
               Projects
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
               className="text-white px-4 py-2 hover:text-yellow-400 transition-all duration-300"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="text-white px-4 py-2 hover:text-yellow-400 transition-all duration-300"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

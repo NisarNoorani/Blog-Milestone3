@@ -1,6 +1,6 @@
 import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { AiFillAndroid, AiFillApple } from 'react-icons/ai';
-
+import Link from 'next/link'
 export default function Footer() {
   return (
     <div className="mt-0 bg-[#171717] pt-6">
@@ -15,21 +15,21 @@ export default function Footer() {
               stories from around the world.
             </p>
             <div className="mt-4 flex gap-4">
-              <a href="#" className="text-white hover:text-yellow-500">
+              <Link href="#" className="text-white hover:text-yellow-500">
                 <FaFacebook size={28} />
-              </a>
-              <a href="#" className="text-white hover:text-yellow-500">
+              </Link>
+              <Link href="#" className="text-white hover:text-yellow-500">
                 <FaLinkedin size={28} />
-              </a>
-              <a href="#" className="text-white hover:text-yellow-500">
+              </Link>
+              <Link href="#" className="text-white hover:text-yellow-500">
                 <FaInstagram size={28} />
-              </a>
-              <a href="#" className="text-white hover:text-yellow-500">
+              </Link>
+              <Link href="#" className="text-white hover:text-yellow-500">
                 <FaTwitter size={28} />
-              </a>
-              <a href="#" className="text-white hover:text-yellow-500">
+              </Link>
+              <Link href="#" className="text-white hover:text-yellow-500">
                 <FaYoutube size={28} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -41,9 +41,9 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="ml-4">
-                <a href="tel:+911800123444" className="text-[14px] font-medium text-white">
+                <Link href="tel:+911800123444" className="text-[14px] font-medium text-white">
                   +91 1800123444
-                </a>
+                </Link>
                 <p className="text-[12px] font-medium text-white/[80%]">Support Number</p>
               </div>
             </div>
@@ -52,9 +52,9 @@ export default function Footer() {
                 <svg width="20" height="15" fill="white">...</svg>
               </div>
               <div className="ml-4">
-                <a href="mailto:help@blogsphere.com" className="text-[14px] font-medium text-white">
+                <Link href="mailto:help@blogsphere.com" className="text-[14px] font-medium text-white">
                   help@blogsphere.com
-                </a>
+                </Link>
                 <p className="text-[12px] font-medium text-white/[80%]">Support Email</p>
               </div>
             </div>
@@ -63,9 +63,9 @@ export default function Footer() {
                 <svg width="18" height="21" fill="white">...</svg>
               </div>
               <div className="ml-4">
-                <a href="#" className="text-[14px] font-medium text-white">
+                <Link href="#" className="text-[14px] font-medium text-white">
                   Sub Nerul, Mumbai, India, 123456
-                </a>
+                </Link>
                 <p className="text-[12px] font-medium text-white/[80%]">Address</p>
               </div>
             </div>
@@ -76,49 +76,49 @@ export default function Footer() {
               <p className="text-[18px] font-medium text-white">Pages</p>
               <ul>
                 <li className="mt-4">
-                  <a className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/">
+                  <Link className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-4">
-                  <a className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/news">
+                  <Link className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/news">
                     News
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-4">
-                  <a className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/contact">
+                  <Link className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-4">
-                  <a
+                  <Link
                     className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500"
                     href="/plans"
                   >
                     Plans and Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-4">
-                  <a className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/terms">
+                  <Link className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/terms">
                     Terms and Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li className="mt-4">
-                  <a className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/privacy">
+                  <Link className="text-[15px] font-normal hover:font-semibold text-white hover:text-yellow-500" href="/privacy">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="mt-6 flex flex-col gap-4 sm:mt-0">
               <p className="text-[18px] font-medium text-white">Download the App</p>
               <div className="flex gap-4">
-                <a href="#" className="text-white hover:text-yellow-500">
+                <Link href="#" className="text-white hover:text-yellow-500">
                   <AiFillAndroid size={36} />
-                </a>
-                <a href="#" className="text-white hover:text-yellow-500">
+                </Link>
+                <Link href="#" className="text-white hover:text-yellow-500">
                   <AiFillApple size={36} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

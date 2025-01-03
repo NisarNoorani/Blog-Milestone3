@@ -1,4 +1,6 @@
 // pages/index.js
+import Link from 'next/link'
+
 export default function Home() {
     return (
       <section className="bg-[#171717] text-white py-32 min-h-screen">
@@ -15,12 +17,12 @@ export default function Home() {
               Blog Sphere is your space to share stories, ideas, and insights with a global audience. 
               Discover engaging content, write your thoughts, and connect with a community of creators.
             </p>
-            <a
+            <Link
               href="#"
               className="bg-transparent text-yellow-300 hover:bg-yellow-300 hover:text-black font-bold rounded-md border-2 border-yellow-300 py-3 px-6 transition duration-300 ease-in-out"
             >
               Join Blog Sphere
-            </a>
+            </Link>
           </div>
   
           {/* Right Column with Images */}
